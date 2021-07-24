@@ -34,11 +34,26 @@ fetch('https://opentdb.com/api.php?amount=10&category=31&difficulty=easy&type=mu
             
             
         })
+
+        var score = 0;
         // console.log(trivia.results[1].correct_answer);
         function correct(id){
             document.getElementById(id).style.backgroundColor = "#b0ddcd";
-            // console.log("func is working");
+            score++;
         }
         function incorrect(id){
             document.getElementById(id).style.backgroundColor = "#fbe3e3";
         }
+        function showScore(){
+          document.getElementById("modal").style.display = "flex";
+          document.getElementById("score").innerHTML = score;
+          
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        
+        

@@ -53,6 +53,7 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     margin: 1rem 0;
     width: 50%;
     text-align: center;
+    cursor: pointer;
 }
 .btn1{
     background: #7F00FF;  /* fallback for old browsers */
@@ -118,6 +119,46 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     }
 }
 
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.438);
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    .modal-cont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 12px; 
+    }
+    /* The Close Button */
+    .close {
+        color: #00d188;
+        float: right;
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    };
+}
+
 @media all and (max-width: 480px){
     body{
         margin: 3% 3%;
@@ -137,6 +178,13 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
         a{
             font-size: 0.9rem;
             padding: 0.9rem;
+        }
+    }
+    .modal{
+        .modal-cont{
+            h1{
+                font-size: 1.5rem;
+            }
         }
     }
 }
