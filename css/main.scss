@@ -150,13 +150,6 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
         font-size: 5rem;
         font-weight: bold;
     }
-    
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    };
 }
 
 @media all and (max-width: 480px){
