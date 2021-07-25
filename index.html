@@ -9,22 +9,33 @@
 </head>
 <body>
     <div class="landing">
-        <h1>Trivia</h1>
-        <h1 class="intro">
-            Welcome to Trivia!
-            This is a trivia website created using OpenTDB API.
-            currently we have 3 categories from which you can attempt the quiz.
-        </h1 class="intro">
-        <a href="#quizzes" class="btn btn1">Attempt a quiz</a>
+        <div class="content">
+            <!-- <h1>Trivvy</h1> -->
+            <h3>Welcome to Trivvy!</h3>
+            <h1 class="intro">
+                Confident on your Knowledge?<br>
+                Try out our quiz.
+            </h1><br>
+            <a href="#quizzes" class="btn btn1">Attempt a quiz</a>
+        </div>
     </div>
     
     <div class="row" id="quizzes">
-        <a href='https://www.freepik.com/vectors/character'><img src="./images/anime.png" alt="anime image" style="width: 100%;height: auto;"></a>
-        <a class="btn btn1" href="./anime.html">Anime</a>
-        <a href='https://www.freepik.com/vectors/background'><img src="./images/gk.png" alt="gk image" style="width: 100%;height: auto;"></a>
-        <a class="btn btn2" href="./gk.html">General Knowledge</a>
-        <a href='https://www.freepik.com/vectors/education'><img src="./images/science.png" alt="science image" style="width: 100%;height: auto;"></a>
-        <a class="btn btn3" href="./science.html">Science</a>
+        <div class="img-card">
+            <a href='https://www.freepik.com/vectors/character'><img src="./images/anime.png" alt="anime image"></a>
+            <h2>All the anime quizzes you need. Are you more Goku, Asuka, Ryuk or Naruto? Find out!</h2>
+            <a class="btn btn1" href="./anime.html">Anime</a>
+        </div><br>
+        <div class="img-card">
+            <a href='https://www.freepik.com/vectors/background'><img src="./images/gk.png" alt="gk image"></a>
+            <h2>At what level do you think your general knowledge is? Here's a fun way to find out!</h2>
+            <a class="btn btn2" href="./gk.html">General Knowledge</a>
+        </div><br>
+        <div class="img-card">
+            <a href='https://www.freepik.com/vectors/education'><img src="./images/science.png" alt="science image"></a>
+            <h2>Put your science smarts under the microscope and see how much you know about bloodstones, biomes, buoyancy, and more!</h2>
+            <a class="btn btn3" href="./science.html">Science</a>
+        </div><br>
     </div>
     
 </body>

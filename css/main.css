@@ -40,11 +40,41 @@ img {
   height: 100vh;
 }
 
+.landing .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .landing .intro {
-  padding: 2rem 0;
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 900;
   text-align: left;
+  line-height: 1;
+}
+
+.landing .btn1 {
+  font-size: 1rem;
+  width: auto;
+  padding: 0.5rem 1rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 5px;
+}
+
+.landing h3 {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 a:focus {
@@ -89,6 +119,23 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.row .img-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -99,6 +146,26 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 40%;
+  padding: 0.7rem;
+}
+
+.row .img-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.row .img-card .btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+.row .img-card img {
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .btn {
@@ -317,6 +384,15 @@ a:focus {
     font-size: 1.5rem;
   }
   .modal .modal-cont #score {
+    font-size: 2.5rem;
+  }
+  .row .img-card {
+    width: 100%;
+  }
+  .landing {
+    margin: 7%;
+  }
+  .landing .intro {
     font-size: 2.5rem;
   }
 }
