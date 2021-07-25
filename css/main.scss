@@ -19,6 +19,20 @@ img{
     margin: 0%;
     padding: 0;
 }
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    height: 100vh;
+    .intro{
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-align: left;
+    }
+}
 a:focus{
     outline: none;
     border: none;
