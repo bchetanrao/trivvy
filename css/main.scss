@@ -58,6 +58,8 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     width: 50%;
     text-align: center;
     cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .btn1{
     background: #7F00FF;  /* fallback for old browsers */
@@ -117,6 +119,8 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
         font-size: 1rem;
         border-radius: 10px;
         margin: 0.5rem 0;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
         &:hover{
             background-color: $border-color;
         }

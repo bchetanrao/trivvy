@@ -83,6 +83,11 @@ a:focus {
   width: 50%;
   text-align: center;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn1 {
@@ -176,6 +181,11 @@ a:focus {
   font-size: 1rem;
   border-radius: 10px;
   margin: 0.5rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .block a:hover {
