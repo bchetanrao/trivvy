@@ -15,6 +15,10 @@ h1{
     text-align: center;
     
 }
+a:focus{
+    outline: none;
+    border: none;
+}
 #an{
     background: #7F00FF;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
@@ -124,7 +128,7 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0%;
     left: 0%;
     height: 100%;
@@ -137,18 +141,32 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
         flex-direction: column;
         align-items: center;
         background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
         width: 80%;
         border-radius: 12px; 
     }
     /* The Close Button */
-    .close {
-        color: #00d188;
+    span{
+        display: flex;
+        background-color: #00d188;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 12px 12px 0 0;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+    }
+    .tick {
+        color: white;
         float: right;
         font-size: 5rem;
         font-weight: bold;
+    }
+    h1{
+        padding: 0.5rem 1rem;
+    }
+    #score{
+        font-size: 3rem;
+        padding-top: 0;
     }
 }
 
@@ -177,6 +195,9 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
         .modal-cont{
             h1{
                 font-size: 1.5rem;
+            }
+            #score{
+                font-size: 2.5rem;
             }
         }
     }

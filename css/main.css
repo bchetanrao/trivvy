@@ -17,6 +17,11 @@ h1 {
   text-align: center;
 }
 
+a:focus {
+  outline: none;
+  border: none;
+}
+
 #an {
   background: #7F00FF;
   /* fallback for old browsers */
@@ -186,7 +191,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.438);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0%;
   left: 0%;
   height: 100%;
@@ -212,19 +217,41 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
   width: 80%;
   border-radius: 12px;
 }
 
-.modal .close {
-  color: #00d188;
+.modal span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #00d188;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0%;
+}
+
+.modal .tick {
+  color: white;
   float: right;
   font-size: 5rem;
   font-weight: bold;
+}
+
+.modal h1 {
+  padding: 0.5rem 1rem;
+}
+
+.modal #score {
+  font-size: 3rem;
+  padding-top: 0;
 }
 
 @media all and (max-width: 480px) {
@@ -248,6 +275,9 @@ h1 {
   }
   .modal .modal-cont h1 {
     font-size: 1.5rem;
+  }
+  .modal .modal-cont #score {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

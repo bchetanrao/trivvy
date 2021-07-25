@@ -44,6 +44,9 @@ fetch('https://opentdb.com/api.php?amount=8&category=9&difficulty=easy&type=mult
         }
         function showScore(){
           document.getElementById("modal").style.display = "flex";
+          if(score>5){
+            score = 5;
+          }
           document.getElementById("score").innerHTML = score;
           
         }
