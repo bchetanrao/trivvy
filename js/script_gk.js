@@ -76,9 +76,11 @@ fetch('https://opentdb.com/api.php?amount=10&category=9&type=multiple')
         }
 
         var loader = document.getElementById("loader");
-        console.log(loader);
 
         window.addEventListener('load',()=>{
-          loader.style.display = "none";
+          setTimeout(hideLoader,3000);
         })
+        function hideLoader(){
+          loader.style.display = "none";
+        }
 

@@ -354,4 +354,10 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
             font-size: 2.5rem;
         }
     }
+    .loader{
+        .pl1__a, .pl1__b,.pl1__c{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
 }

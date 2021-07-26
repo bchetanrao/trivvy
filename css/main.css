@@ -527,5 +527,9 @@ a:focus {
   .landing .intro {
     font-size: 2.5rem;
   }
+  .loader .pl1__a, .loader .pl1__b, .loader .pl1__c {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
