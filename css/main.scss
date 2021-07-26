@@ -19,6 +19,66 @@ img{
     margin: 0%;
     padding: 0;
 }
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    .pl1__a, .pl1__b, .pl1__c{
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        transform-origin: 50% 100%;
+        margin: 0.5rem;
+      }
+      
+      .pl1__a, .pl1__b, .pl1__c {
+        animation: bounce1 1s linear infinite;
+      }
+      .pl1, .pl2, .pl3, .pl4 {
+        display: flex;
+        margin: 1.5em;
+        width: 6em;
+        height: 6em;
+      }
+      .pl1__a{
+        background: #f42f25;
+      }
+      .pl1__b{
+        background: #f49725;
+        animation-delay: 0.1s;
+      }
+      .pl1__c{
+        background: #255ff4;
+        animation-delay: 0.2s;
+      }
+
+      /* Animations */
+      @keyframes bounce1 {
+        from, to {
+          transform: translateY(0) scale(1, 1);
+          animation-timing-function: ease-in;
+        }
+        45% {
+          transform: translateY(5em) scale(1, 1);
+          animation-timing-function: linear;
+        }
+        50% {
+          transform: translateY(5em) scale(1.5, 0.5);
+          animation-timing-function: linear;
+        }
+        55% {
+          transform: translateY(5em) scale(1, 1);
+          animation-timing-function: ease-out;
+        }
+      }
+	
+}
 .landing{
     display: flex;
     flex-direction: column;

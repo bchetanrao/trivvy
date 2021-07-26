@@ -74,3 +74,11 @@ fetch('https://opentdb.com/api.php?amount=10&category=9&type=multiple')
             modal.style.display = "none";
           }
         }
+
+        var loader = document.getElementById("loader");
+        console.log(loader);
+
+        window.addEventListener('load',()=>{
+          loader.style.display = "none";
+        })
+
