@@ -1,7 +1,7 @@
 fetch('https://opentdb.com/api.php?amount=10&category=17&type=multiple')
         .then(response => response.json())
         .then(trivia => {
-            // console.log(trivia);
+            console.log(trivia);
             document.getElementById("ques1").innerHTML = trivia.results[0].question;
             document.getElementById("opt1_1").innerHTML = trivia.results[0].correct_answer;
             document.getElementById("opt1_2").innerHTML = trivia.results[0].incorrect_answers[0];
@@ -32,7 +32,23 @@ fetch('https://opentdb.com/api.php?amount=10&category=17&type=multiple')
             document.getElementById("opt5_3").innerHTML = trivia.results[4].incorrect_answers[1];
             document.getElementById("opt5_4").innerHTML = trivia.results[4].incorrect_answers[2];
             
-            
+            document.getElementById("ques6").innerHTML = trivia.results[5].question;
+            document.getElementById("opt6_1").innerHTML = trivia.results[5].correct_answer;
+            document.getElementById("opt6_2").innerHTML = trivia.results[5].incorrect_answers[0];
+            document.getElementById("opt6_3").innerHTML = trivia.results[5].incorrect_answers[1];
+            document.getElementById("opt6_4").innerHTML = trivia.results[5].incorrect_answers[2];
+
+            document.getElementById("ques7").innerHTML = trivia.results[6].question;
+            document.getElementById("opt7_1").innerHTML = trivia.results[6].correct_answer;
+            document.getElementById("opt7_2").innerHTML = trivia.results[6].incorrect_answers[0];
+            document.getElementById("opt7_3").innerHTML = trivia.results[6].incorrect_answers[1];
+            document.getElementById("opt7_4").innerHTML = trivia.results[6].incorrect_answers[2];
+
+            document.getElementById("ques8").innerHTML = trivia.results[7].question;
+            document.getElementById("opt8_1").innerHTML = trivia.results[7].correct_answer;
+            document.getElementById("opt8_2").innerHTML = trivia.results[7].incorrect_answers[0];
+            document.getElementById("opt8_3").innerHTML = trivia.results[7].incorrect_answers[1];
+            document.getElementById("opt8_4").innerHTML = trivia.results[7].incorrect_answers[2];
         })
         var score = 0;
         // console.log(trivia.results[1].correct_answer);
@@ -45,8 +61,8 @@ fetch('https://opentdb.com/api.php?amount=10&category=17&type=multiple')
         }
         function showScore(){
           document.getElementById("modal").style.display = "flex";
-          if(score>5){
-            score = 5;
+          if(score>8){
+            score = 8;
           }
           document.getElementById("score").innerHTML = score;
           
