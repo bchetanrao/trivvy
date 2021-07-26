@@ -1,4 +1,4 @@
-fetch('https://opentdb.com/api.php?amount=10&category=31&difficulty=easy&type=multiple')
+fetch('https://opentdb.com/api.php?amount=10&category=31&type=multiple')
         .then(response => response.json())
         .then(trivia => {
             // console.log(trivia);
