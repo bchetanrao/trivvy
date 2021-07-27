@@ -65,17 +65,17 @@ img {
 }
 
 .loader .pl1__a {
-  background: #f42f25;
+  background: #E100FF;
 }
 
 .loader .pl1__b {
-  background: #f49725;
+  background: #ff6a00;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
 .loader .pl1__c {
-  background: #255ff4;
+  background: #00c6ff;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
@@ -182,17 +182,22 @@ img {
   -ms-flex-item-align: start;
       align-self: flex-start;
   border-radius: 5px;
+  box-shadow: 0px 0px 86px -2px #E100FF;
+  -webkit-box-shadow: 0px 0px 86px -2px #E100FF;
+  -moz-box-shadow: 0px 0px 86px -2px #E100FF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.landing .btn1:hover {
+  box-shadow: 0px 0px 86px 0px #7F00FF;
+  -webkit-box-shadow: 0px 0px 86px 0px #7F00FF;
+  -moz-box-shadow: 0px 0px 86px 0px #7F00FF;
 }
 
 .landing h3 {
   font-size: 1rem;
   margin-bottom: 0.7rem;
-}
-
-.landing .btn1 {
-  box-shadow: 0px 0px 86px -5px #E100FF;
-  -webkit-box-shadow: 0px 0px 86px -5px #E100FF;
-  -moz-box-shadow: 0px 0px 86px -5px #E100FF;
 }
 
 a:focus {
