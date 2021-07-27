@@ -189,6 +189,12 @@ img {
   margin-bottom: 0.7rem;
 }
 
+.landing .btn1 {
+  box-shadow: 0px 0px 86px -5px #E100FF;
+  -webkit-box-shadow: 0px 0px 86px -5px #E100FF;
+  -moz-box-shadow: 0px 0px 86px -5px #E100FF;
+}
+
 a:focus {
   outline: none;
   border: none;
@@ -261,11 +267,12 @@ a:focus {
           align-items: center;
   width: 40%;
   padding: 1rem;
-  background-color: #f7f7f7;
+  box-shadow: 5px 5px 42px -10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 5px 42px -10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 5px 42px -10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border-radius: 7px;
-  box-shadow: 10px 10px 14px 0px #e0e0e0;
-  -webkit-box-shadow: 10px 10px 14px 0px #e0e0e0;
-  -moz-box-shadow: 10px 10px 14px 0px #e0e0e0;
   margin: 1rem;
 }
 

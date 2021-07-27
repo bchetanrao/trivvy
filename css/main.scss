@@ -110,6 +110,11 @@ img{
         font-size: 1rem;
         margin-bottom: 0.7rem;
     }
+    .btn1{
+        box-shadow: 0px 0px 86px -5px #E100FF;
+-webkit-box-shadow: 0px 0px 86px -5px #E100FF;
+-moz-box-shadow: 0px 0px 86px -5px #E100FF;
+    }
 }
 a:focus{
     outline: none;
@@ -154,12 +159,18 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     align-items: center;
     width: 40%;
     padding: 1rem;
-    background-color: #f7f7f7;
+    box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
+-webkit-box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
+-moz-box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
+    transition: 0.3s;
     border-radius: 7px;
-    box-shadow: 10px 10px 14px 0px rgba(224,224,224,1);
--webkit-box-shadow: 10px 10px 14px 0px rgba(224,224,224,1);
--moz-box-shadow: 10px 10px 14px 0px rgba(224,224,224,1);
+//     box-shadow: 10px 10px 14px 0px rgba(224,224,224,1);
+// -webkit-box-shadow: 10px 10px 14px 0px rgba(224,224,224,1);
+// -moz-box-shadow: 10px 10px 14px 0px rgba(224,224,224,1);
     margin: 1rem ;
+    &:hover{
+        // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
     h2{
         font-size: 1.2rem;
         font-weight: 700;
