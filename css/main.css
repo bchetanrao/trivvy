@@ -182,17 +182,17 @@ img {
   -ms-flex-item-align: start;
       align-self: flex-start;
   border-radius: 5px;
-  box-shadow: 0px 0px 86px -2px #E100FF;
-  -webkit-box-shadow: 0px 0px 86px -2px #E100FF;
-  -moz-box-shadow: 0px 0px 86px -2px #E100FF;
+  box-shadow: 0px 0px 86px 0px rgba(225, 0, 255, 0.45);
+  -webkit-box-shadow: 0px 0px 86px 0px rgba(225, 0, 255, 0.45);
+  -moz-box-shadow: 0px 0px 86px 0px rgba(225, 0, 255, 0.45);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .landing .btn1:hover {
-  box-shadow: 0px 0px 86px 0px #7F00FF;
-  -webkit-box-shadow: 0px 0px 86px 0px #7F00FF;
-  -moz-box-shadow: 0px 0px 86px 0px #7F00FF;
+  box-shadow: 0px 0px 86px 0px rgba(128, 0, 255, 0.45);
+  -webkit-box-shadow: 0px 0px 86px 0px rgba(128, 0, 255, 0.45);
+  -moz-box-shadow: 0px 0px 86px 0px rgba(128, 0, 255, 0.45);
 }
 
 .landing h3 {
@@ -341,9 +341,9 @@ a:focus {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-  box-shadow: 0px 0px 60px -15px #E100FF;
-  -webkit-box-shadow: 0px 0px 60px -15px #E100FF;
-  -moz-box-shadow: 0px 0px 60px -15px #E100FF;
+  box-shadow: 0px 0px 60px 0px rgba(225, 0, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(225, 0, 255, 0.25);
+  -moz-box-shadow: 0px 0px 60px 0px rgba(225, 0, 255, 0.25);
 }
 
 .btn1:hover {
@@ -353,9 +353,9 @@ a:focus {
   background: -webkit-gradient(linear, right top, left top, from(#E100FF), to(#7F00FF));
   background: linear-gradient(to left, #E100FF, #7F00FF);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 60px -15px #7F00FF;
-  -webkit-box-shadow: 0px 0px 60px -15px #7F00FF;
-  -moz-box-shadow: 0px 0px 60px -15px #7F00FF;
+  box-shadow: 0px 0px 60px 0px rgba(128, 0, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(128, 0, 255, 0.25);
+  -moz-box-shadow: 0px 0px 60px 0px rgba(128, 0, 255, 0.25);
 }
 
 .btn2 {
@@ -367,9 +367,9 @@ a:focus {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-  box-shadow: 0px 0px 60px -15px #00c6ff;
-  -webkit-box-shadow: 0px 0px 60px -15px #00c6ff;
-  -moz-box-shadow: 0px 0px 60px -15px #00c6ff;
+  box-shadow: 0px 0px 60px 0px rgba(0, 200, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 200, 255, 0.25);
+  -moz-box-shadow: 0px 0px 60px 0px rgba(0, 200, 255, 0.25);
 }
 
 .btn2:hover {
@@ -378,9 +378,9 @@ a:focus {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00c6ff));
   background: linear-gradient(to right, #0072ff, #00c6ff);
-  box-shadow: 0px 0px 60px -15px #0072ff;
-  -webkit-box-shadow: 0px 0px 60px -15px #0072ff;
-  -moz-box-shadow: 0px 0px 60px -15px #0072ff;
+  box-shadow: 0px 0px 60px 0px rgba(0, 115, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 115, 255, 0.25);
+  -moz-box-shadow: 0px 0px 60px 0px rgba(0, 115, 255, 0.25);
 }
 
 .btn3 {
@@ -392,9 +392,9 @@ a:focus {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-  box-shadow: 0px 0px 60px -15px #ff6a00;
-  -webkit-box-shadow: 0px 0px 60px -15px #ff6a00;
-  -moz-box-shadow: 0px 0px 60px -15px #ff6a00;
+  box-shadow: 0px 0px 60px 0px rgba(255, 106, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(255, 106, 0, 0.25);
+  -moz-box-shadow: 0px 0px 60px 0px rgba(255, 106, 0, 0.25);
 }
 
 .btn3:hover {
@@ -404,9 +404,9 @@ a:focus {
   background: -webkit-gradient(linear, right top, left top, from(#ff6a00), to(#ee0979));
   background: linear-gradient(to left, #ff6a00, #ee0979);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 60px -15px #ee0979;
-  -webkit-box-shadow: 0px 0px 60px -15px #ee0979;
-  -moz-box-shadow: 0px 0px 60px -15px #ee0979;
+  box-shadow: 0px 0px 60px 0px rgba(238, 9, 120, 0.25);
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(238, 9, 120, 0.25);
+  -moz-box-shadow: 0px 0px 60px 0px rgba(238, 9, 120, 0.25);
 }
 
 .block {
