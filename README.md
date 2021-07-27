@@ -1,5 +1,5 @@
 # triviaying
-A simple online trivia website created using OpenTDB API for generating the questions.
+A simple online trivia website created using OpenTDB API[https://opentdb.com/api_config.php] for generating the questions.
 
 hosted on netlfiy- https://trivvy.netlify.app/
 
