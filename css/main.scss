@@ -164,8 +164,9 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     width: 40%;
     padding: 1rem;
     box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
--webkit-box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
--moz-box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 5px 42px -10px rgba(0,0,0,0.15);
+    border: solid 1px #f1f1f1;
     transition: 0.3s;
     border-radius: 7px;
 //     box-shadow: 10px 10px 14px 0px rgba(224,224,224,1);
