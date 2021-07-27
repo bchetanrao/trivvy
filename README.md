@@ -1,9 +1,9 @@
 # triviaying
 A simple online trivia website created using [OpenTDB API](https://opentdb.com/api_config.php) for generating the questions.
 currently there are 3 categories of quizzes
-  -Anime
-  -General Knowledge
-  -Science
+  - Anime
+  - General Knowledge
+  - Science
 ***
 View it hosted on netlfiy- https://trivvy.netlify.app/
 
