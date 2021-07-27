@@ -218,10 +218,16 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: 0.3s ease-in;
+    box-shadow: 0px 0px 60px -15px #E100FF;
+    -webkit-box-shadow: 0px 0px 60px -15px #E100FF;
+    -moz-box-shadow: 0px 0px 60px -15px #E100FF;
     &:hover{
         background: #7F00FF;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 0px 0px 60px -15px #7F00FF;
+        -webkit-box-shadow: 0px 0px 60px -15px #7F00FF;
+        -moz-box-shadow: 0px 0px 60px -15px #7F00FF;
     }
 
 }
@@ -230,10 +236,16 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: 0.3s ease-in;
+    box-shadow: 0px 0px 60px -15px #00c6ff;
+    -webkit-box-shadow: 0px 0px 60px -15px #00c6ff;
+    -moz-box-shadow: 0px 0px 60px -15px #00c6ff;
     &:hover{
         background: #00c6ff;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0072ff, #00c6ff);
+        box-shadow: 0px 0px 60px -15px #0072ff;
+        -webkit-box-shadow: 0px 0px 60px -15px #0072ff;
+        -moz-box-shadow: 0px 0px 60px -15px #0072ff;
     }
 
 }
@@ -242,10 +254,16 @@ background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, F
     background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: 0.3s ease-in;
+    box-shadow: 0px 0px 60px -15px #ff6a00;
+    -webkit-box-shadow: 0px 0px 60px -15px #ff6a00;
+    -moz-box-shadow: 0px 0px 60px -15px #ff6a00;
     &:hover{
         background: #ee0979;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 0px 0px 60px -15px #ee0979;
+        -webkit-box-shadow: 0px 0px 60px -15px #ee0979;
+        -moz-box-shadow: 0px 0px 60px -15px #ee0979;
     }
 }
 .block{
