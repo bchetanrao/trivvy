@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 2% 10%;
+  margin: 2% 20%;
   background-color: #fff;
 }
 
@@ -132,6 +132,25 @@ img {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
+}
+
+button {
+  width: 100%;
+  font-family: 'Open Sans',sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  border: solid 1px #d8d8d8;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: left;
+  font-weight: 300;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #d8d8d8;
 }
 
 .landing {
@@ -270,7 +289,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
+  width: 45%;
   padding: 1rem;
   box-shadow: 5px 5px 42px -10px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 5px 5px 42px -10px rgba(0, 0, 0, 0.15);
@@ -487,7 +506,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fefefe;
-  width: 80%;
+  width: 50%;
   border-radius: 12px;
 }
 
@@ -542,6 +561,9 @@ a:focus {
   .block a {
     font-size: 0.9rem;
     padding: 0.9rem;
+  }
+  .modal .modal-cont {
+    width: 80%;
   }
   .modal .modal-cont h1 {
     font-size: 1.5rem;

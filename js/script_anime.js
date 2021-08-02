@@ -2,55 +2,18 @@ fetch('https://opentdb.com/api.php?amount=10&category=31&type=multiple')
         .then(response => response.json())
         .then(trivia => {
             // console.log(trivia);
-            document.getElementById("ques1").innerHTML = trivia.results[0].question;
-            document.getElementById("opt1_1").innerHTML = trivia.results[0].correct_answer;
-            document.getElementById("opt1_2").innerHTML = trivia.results[0].incorrect_answers[0];
-            document.getElementById("opt1_3").innerHTML = trivia.results[0].incorrect_answers[1];
-            document.getElementById("opt1_4").innerHTML = trivia.results[0].incorrect_answers[2];
-
-            document.getElementById("ques2").innerHTML = trivia.results[1].question;
-            document.getElementById("opt2_1").innerHTML = trivia.results[1].correct_answer;
-            document.getElementById("opt2_2").innerHTML = trivia.results[1].incorrect_answers[0];
-            document.getElementById("opt2_3").innerHTML = trivia.results[1].incorrect_answers[1];
-            document.getElementById("opt2_4").innerHTML = trivia.results[1].incorrect_answers[2];
-
-            document.getElementById("ques3").innerHTML = trivia.results[2].question;
-            document.getElementById("opt3_1").innerHTML = trivia.results[2].correct_answer;
-            document.getElementById("opt3_2").innerHTML = trivia.results[2].incorrect_answers[0];
-            document.getElementById("opt3_3").innerHTML = trivia.results[2].incorrect_answers[1];
-            document.getElementById("opt3_4").innerHTML = trivia.results[2].incorrect_answers[2];
-
-            document.getElementById("ques4").innerHTML = trivia.results[3].question;
-            document.getElementById("opt4_1").innerHTML = trivia.results[3].correct_answer;
-            document.getElementById("opt4_2").innerHTML = trivia.results[3].incorrect_answers[0];
-            document.getElementById("opt4_3").innerHTML = trivia.results[3].incorrect_answers[1];
-            document.getElementById("opt4_4").innerHTML = trivia.results[3].incorrect_answers[2];
-
-            document.getElementById("ques5").innerHTML = trivia.results[4].question;
-            document.getElementById("opt5_1").innerHTML = trivia.results[4].correct_answer;
-            document.getElementById("opt5_2").innerHTML = trivia.results[4].incorrect_answers[0];
-            document.getElementById("opt5_3").innerHTML = trivia.results[4].incorrect_answers[1];
-            document.getElementById("opt5_4").innerHTML = trivia.results[4].incorrect_answers[2];
-
-            document.getElementById("ques6").innerHTML = trivia.results[5].question;
-            document.getElementById("opt6_1").innerHTML = trivia.results[5].correct_answer;
-            document.getElementById("opt6_2").innerHTML = trivia.results[5].incorrect_answers[0];
-            document.getElementById("opt6_3").innerHTML = trivia.results[5].incorrect_answers[1];
-            document.getElementById("opt6_4").innerHTML = trivia.results[5].incorrect_answers[2];
-
-            document.getElementById("ques7").innerHTML = trivia.results[6].question;
-            document.getElementById("opt7_1").innerHTML = trivia.results[6].correct_answer;
-            document.getElementById("opt7_2").innerHTML = trivia.results[6].incorrect_answers[0];
-            document.getElementById("opt7_3").innerHTML = trivia.results[6].incorrect_answers[1];
-            document.getElementById("opt7_4").innerHTML = trivia.results[6].incorrect_answers[2];
-
-            document.getElementById("ques8").innerHTML = trivia.results[7].question;
-            document.getElementById("opt8_1").innerHTML = trivia.results[7].correct_answer;
-            document.getElementById("opt8_2").innerHTML = trivia.results[7].incorrect_answers[0];
-            document.getElementById("opt8_3").innerHTML = trivia.results[7].incorrect_answers[1];
-            document.getElementById("opt8_4").innerHTML = trivia.results[7].incorrect_answers[2];
-            
-            
+           var i=1;
+           trivia.results.forEach(curr => {
+             let html = '<div class="block">';
+             html+=`<label>${i} of 8</label><h2 id="ques1">${curr.question}</h2>`;
+             html+=`<button id="opt1_1" onclick="correct(this.id)">${curr.correct_answer}</button>`;
+             html+=`<button id="opt1_2" onclick="incorrect(this.id)">${curr.incorrect_answers[0]}</button>`;
+             html+=`<button id="opt1_3" onclick="incorrect(this.id)">${curr.incorrect_answers[1]}</button>`;
+             html+=`<button id="opt1_4" onclick="incorrect(this.id)">${curr.incorrect_answers[2]}</button>`;
+             html+=`</div>`;
+             document.querySelector('.paper').innerHTML+=html;
+             i++;
+           });
         })
 
         var score = 0;
