@@ -29,20 +29,25 @@
         <div class="img-card">
             <a href='https://www.freepik.com/vectors/character'><img src="./images/anime.png" alt="anime image"></a>
             <h2>All the anime quizzes you need. Are you more Goku, Asuka, Ryuk or Naruto? Find out!</h2>
-            <a class="btn btn1" href="./anime.html">Anime</a>
+            <a class="btn btn1" href="./quiz.html?quiz=anime">Anime</a>
         </div><br>
         <div class="img-card">
             <a href='https://www.freepik.com/vectors/background'><img src="./images/gk.png" alt="gk image"></a>
             <h2>At what level do you think your general knowledge is? Here's a fun way to find out!</h2>
-            <a class="btn btn2" href="./gk.html">General Knowledge</a>
+            <a class="btn btn2" href="./quiz.html?quiz=gk">General Knowledge</a>
         </div><br>
         <div class="img-card">
             <a href='https://www.freepik.com/vectors/education'><img src="./images/science.png" alt="science image"></a>
             <h2>Put your science smarts under the microscope and see how much you know about bloodstones, biomes, buoyancy, and more!</h2>
-            <a class="btn btn3" href="./science.html">Science</a>
+            <a class="btn btn3" href="./quiz.html?quiz=science">Science</a>
         </div><br>
     </div>
     
-    <script src="./js/script_anime.js"></script>
+    <script src="./js/constants.js"></script>
+    <script src="./js/trivia.js"></script>
+    <script>
+      // Hide preloader on page load
+      setupLoader();
+    </script>
 </body>
 </html>
