@@ -80,6 +80,7 @@ img{
 button{
     width: 100%;
     font-family: 'Open Sans',sans-serif;
+    color: #000;
     background-color: #fff;
     border-radius: 10px;
     border: solid 1px $border-color;
@@ -301,6 +302,7 @@ a:focus{
     width: 100%;
     z-index: 1;
     .modal-cont{
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

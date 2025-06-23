@@ -56,6 +56,25 @@ document.addEventListener('DOMContentLoaded', () => {
   bannerImg.src = settings.bannerSrc;
   bannerImg.alt = settings.bannerAlt;
 
+  // Update SEO: document title and meta tags
+  document.title = `${settings.title} - Trivvy`;
+  const metaDescription = document.getElementById('meta-description');
+  if (metaDescription) {
+    metaDescription.content = `Test your knowledge in the ${settings.title} quiz on Trivvy.`;
+  }
+  const linkCanonical = document.getElementById('link-canonical');
+  if (linkCanonical) {
+    linkCanonical.href = `${window.location.origin}/quiz.html?quiz=${quizKey}`;
+  }
+  const ogTitle = document.getElementById('og-title');
+  if (ogTitle) ogTitle.content = `${settings.title} - Trivvy`;
+  const ogDesc = document.getElementById('og-desc');
+  if (ogDesc) ogDesc.content = `Test your knowledge in the ${settings.title} quiz on Trivvy.`;
+  const ogUrl = document.getElementById('og-url');
+  if (ogUrl) ogUrl.content = `${window.location.origin}/quiz.html?quiz=${quizKey}`;
+  const ogImage = document.getElementById('og-image');
+  if (ogImage) ogImage.content = settings.bannerSrc;
+
   // Fetch and render quiz
   getQuiz(settings.categoryId).then(renderQuiz);
 

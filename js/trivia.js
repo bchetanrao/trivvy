@@ -61,9 +61,11 @@ function setupLoader(loaderId = 'loader', delay = LOADER_HIDE_DELAY) {
 
 function closeModalOnOutsideClick(modalId = 'modal') {
   const modal = document.getElementById(modalId);
-  window.addEventListener('click', event => {
+  const handler = event => {
     if (event.target === modal) {
       modal.style.display = 'none';
     }
-  });
+  };
+  window.addEventListener('click', handler);
+  window.addEventListener('touchstart', handler);
 } 

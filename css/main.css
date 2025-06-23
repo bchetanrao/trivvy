@@ -82,6 +82,7 @@ img {
 button {
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  color: #000;
   background-color: #fff;
   border-radius: 10px;
   border: solid 1px #d8d8d8;
@@ -308,6 +309,7 @@ a:focus {
   /* The Close Button */
 }
 .modal .modal-cont {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
